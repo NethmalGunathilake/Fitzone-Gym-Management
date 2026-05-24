@@ -1,0 +1,103 @@
+/* Trainers Section Styles */
+.trainers {
+    background: #1C1C1C;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.trainers-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.trainer-card {
+    background: #131212;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(59, 34, 128, 0.1);
+    width: 280px;
+    transition: transform 0.3s ease;
+}
+
+.trainer-card:hover {
+    transform: translateY(-10px);
+}
+
+.trainer-img {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+}
+
+.trainer-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.trainer-card:hover .trainer-img img {
+    transform: scale(1.05);
+}
+
+.social-links {
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    transition: bottom 0.3s ease;
+}
+
+.trainer-card:hover .social-links {
+    bottom: 20px;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: #d6d1d1;
+    border-radius: 50%;
+    color: #333;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background: var(--main-color);
+    color: #fff;
+}
+
+.trainer-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.trainer-info h3 {
+    font-size: 22px;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+.specialty {
+    color: var(--main-color);
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.bio {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+}
